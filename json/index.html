@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Posts</h1>
+    <div class="posts-container">
+        
+        <div class="group">
+            <label for="title">Titulo</label>
+            <input type="text" id="title" name="title" required />
+        </div>
+
+        <div class="group">
+            <label for="content">Contenido</label>
+            <textarea type="text" name="content" id="content" required></textarea>
+        </div>
+        
+        <input id="submit" type="submit" value="Enviar" />
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/pouchdb@9.0.0/dist/pouchdb.min.js"></script>
+    <script src="./app.js"></script>
+    <!-- <script src="./sw.js"></script> -->
+</body>
+
+</html>
