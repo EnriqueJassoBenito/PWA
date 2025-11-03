@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ==== NAVBAR (Mobile First) ==== */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #0f3460;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  width: 100%;
+}
+
+.nav-links li {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.nav-links a {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #00aaff;
+  border-bottom: 2px solid #00aaff;
+}
+
+/* ==== FORMULARIO ==== */
+.form-container {
+  background: #fff;
+  padding: 1.5rem;
+  margin: 2rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #0f3460;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input[type="submit"],
+button {
+  background: #0f3460;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #00aaff;
+}
+
+/* ==== TARJETAS (LISTADO) ==== */
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1.5rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card h3 {
+  color: #0f3460;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  margin: 0.3rem 0;
+}
+
+.card button {
+  margin-top: 0.7rem;
+  background-color: #dc3545;
+}
+
+.card button:hover {
+  background-color: #a71d2a;
+}
+
+@media (min-width: 600px) {
+  .form-container {
+    max-width: 500px;
+    margin: 3rem auto;
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+    width: auto;
+  }
+
+  .nav-links li {
+    margin: 0;
+  }
+
+  .nav-links a {
+    padding: 0.5rem 0.7rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .form-container {
+    max-width: 600px;
+  }
+
+  .cards-container {
+    max-width: 900px;
+    margin: 2rem auto;
+  }
+}
