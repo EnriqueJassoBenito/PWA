@@ -4,13 +4,7 @@ import { getMessaging, getToken, onMessage, isSupported } from "https://www.gsta
 
 // Configuración obtenida desde Firebase Console
 const firebaseConfig = {
-  apiKey: "AIzaSyDjgZwwfsCNKR5YbDD50UgE9qLoqVqLj9A",
-  authDomain: "test-login3-3e77d.firebaseapp.com",
-  projectId: "test-login3-3e77d",
-  storageBucket: "test-login3-3e77d.firebasestorage.app",
-  messagingSenderId: "447482014567",
-  appId: "1:447482014567:web:791d099e2a5f3467a49dc2",
-  measurementId: "G-1HB59WGH4J"
+  
 };
 
 // Inicializamos Firebase
@@ -41,7 +35,7 @@ if (supported) {
 }
 
 // Clave pública VAPID (de Cloud Messaging)
-const VAPID_KEY = "BP70S6Sw6jrGFDzb3MqMihumgNX0COeZ2ZxxU46BQdYGf_sEAplqPxImm-AJwrkbHX17F8TcvUssjVnbW3KIMK4";
+const VAPID_KEY = "-";
 
 // Función para pedir permiso al usuario y obtener token
 async function requestPermissionAndGetToken() {
